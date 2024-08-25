@@ -12,6 +12,7 @@ This project implements a Raffle smart contract using Solidity and Foundry. The 
     - [Compile the Contracts](#compile-the-contracts)
     - [Deploy the Contracts](#deploy-the-contracts)
     - [Interact with the Contracts](#interact-with-the-contracts)
+    - [Frontend Setup](#frontend-setup)
     - [Testing](#testing)
   - [Contributing](#contributing)
   - [License](#license)
@@ -68,6 +69,42 @@ To deploy the contracts to the Sepolia test network:
 ### Interact with the Contracts
 
 You can interact with the deployed contract using the `Interactions.s.sol` script or directly through Etherscan.
+
+### Frontend Setup
+
+This project now includes a simple frontend that allows users to interact with the raffle contract via a web interface.
+
+1. Navigate to the `frontend` directory:
+
+    ```sh
+    cd frontend
+    ```
+
+2. Install the required dependencies:
+
+    ```sh
+    npm install
+    ```
+
+3. Start the frontend development server:
+
+    ```sh
+    npm start
+    ```
+
+4. Open your browser and navigate to `http://localhost:3000` to see the app.
+
+The frontend interface will look like this:
+
+<img width="566" alt="截屏2024-08-25 18 56 41" src="https://github.com/user-attachments/assets/141b03de-8a7f-46eb-9bfd-0e81320ea9ea">
+
+
+
+This frontend allows users to:
+
+- Connect their Ethereum wallet.
+- View the entrance fee, contract balance, recent winner, raffle state, and current players.
+- Enter the raffle by clicking the "Enter Raffle" button.
 
 ### Testing
 
